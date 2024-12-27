@@ -15,8 +15,7 @@
         <div class="form-control">
             <input type="text"
                    :placeholder="placeholderString"
-                   :value="inputValue"
-                   @input="inputChangeHandler"
+                   v-model="inputValue"
                    @keypress.enter="addNewNote" />
         </div>
         <h2>inputValue: {{ inputValue }}</h2>
