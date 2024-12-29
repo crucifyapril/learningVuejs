@@ -31,3 +31,20 @@ const app = Vue.createApp({
 })
 
 app.mount('#app')
+
+Vue.createApp({
+    data() {
+        return {
+            title: 'Второй Vue 3',
+        }
+    }
+}).mount('#app2')
+
+//-------
+
+// const proxy = new Proxy({}, {
+//     // get(target,p) {
+//     //     console.log(target)
+//     //     console.log(p)
+//     // }
+// })
